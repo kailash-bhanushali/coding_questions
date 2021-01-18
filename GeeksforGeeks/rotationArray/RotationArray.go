@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package rotationArray
 
 func Rotation_Array(arr []int, d int) []int {
 	modFind := len(arr) / d
@@ -16,10 +14,4 @@ func Rotation_Array(arr []int, d int) []int {
 		arr[j] = temp
 	}
 	return arr
-}
-
-func main() {
-	arr := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
-	d := 3
-	fmt.Println(Rotation_Array(arr, d))
 }
